@@ -1,0 +1,20 @@
+body {
+    
+    background : linear-gradient(135deg,#f0b176,rgb(174, 0, 255),rgb(0, 81, 255),rgb(128, 248, 188),rgb(253, 104, 104));
+    font-family: 'Times New Roman', Times, serif;
+    font-size: bold;
+}
+input
+{
+     background: linear-gradient(to right, #d788f0, #95c8ff,rgb(247, 161, 161),rgb(198, 236, 128));
+            border: 1px solid #0056b3;
+            color: white;
+}
+input 
+{
+    color: rgb(133, 0, 44);
+    font-weight: bold;
+}
+.error {
+    color: red;
+}

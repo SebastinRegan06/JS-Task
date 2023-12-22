@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="card m-5 p-5 font-weight-bold">
+            <div id="signup-page" style="display: block;">
+                <form action="#" id="form" autocomplete="off">
+                    <h3 class="text-center">Signup Form</h3>
+    
+                    <div class="form-group">
+                        <label for="username">User Name</label>
+                        <input class="input-group p-1 rounded" type="text" id="username" placeholder="Enter User Name" />
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="input-group p-1 rounded" type="text" id="email"  placeholder="Enter Email Id" />
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="input-group p-1 rounded" type="password" id="password" placeholder="Enter password"  />
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Confirm Password</label>
+                        <input class="input-group p-1 rounded" type="password" id="password2" placeholder="Enter Confirm Password" />
+                        <p class="error"></p>
+                    </div>
+                    <div><br>
+                    <button type="submit" class="btn btn-primary btn-rounded w-100" onclick="signup()">Submit</button>
+                    </div><br>
+                    <div>
+                        <p class="mb-2">🡇 If you have an account.</p>
+                        <button type="button" class="btn btn-primary btn-rounded mb-3 w-25" onclick="showloginpage()">Login</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="login-page" style="display: none;">
+                <form action="#" id="form2" autocomplete="off">
+                    <h1 class="text-center">Login Form</h1>
+                    <div class="form-group">
+                        <label for="username2">User Name</label>
+                        <input class="input-group p-1 rounded" type="text" id="username2" placeholder="Enter User Name" />
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="password3">Password</label>
+                        <input class="input-group p-1 rounded" type="password" id="password3" placeholder="Enter password"  />
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-rounded w-100" onclick="login()">Submit</button>
+                    </div><br>
+                    <div>
+                        <p class="mb-2">🡇 If you don't have an account.</p>
+                        <button type="button" class="btn btn-primary mb-3 btn-rounded w-25" onclick="showsignuppage()">Signup</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="todo-list" style="display: none;">
+                <h1 class="text-center">ToDo List</h1>
+                <br>
+                <div class="todoitems">
+                    <div class="row">
+                        <div class="col-10">
+                            <input type="text" class="form-control" id="input-todo">
+                        </div>
+                        <div class="col-2">
+                            <button class="btn w-100 btn-info" id="goto">Add</button>
+                        </div>
+                    </div><br>
+                <div id="area">
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="./script.js">
+        
+    </script>
